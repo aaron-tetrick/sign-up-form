@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>Sign-Up Form</title>
 </head>
 <body>
     
-    <img src="mitchell-luo-unsplash.jpg" alt="A background image of some lines of code">
-    
+    <img class="main-pic"src="Craig1Edit.jpg" alt="A dog looks lovingly up at a volunteer">
+    <div class="heading">
+    <h1>Atlanta Humane Society</h1>
+    <img class="logo" src="ahs-logo.jpg" alt="A heart logo for Atlanta Humane Society">
+     </div>
     <div class="container">
-    <h2>This is not a real online service! You know you need something
-        like this in your life to help you realize your deepest dreams. 
-        Sign up now to get started. 
-        
-        You know you want to.</h2>
+        <h2>Love animals and want to turn your compassion into action? Join our volunteer team to help animals who need it most. We need volunteers for socializing future companions, community engagement, administrative support, fostering animals, and shelter medicine assistance. We offer plenty of opportunities to help animals that work well with your preferences and schedule.</h2>
+    
 
-        <form>
-            <fieldset>
-                <legend>Let's do this!</legend>
-                <input type="text">
-                <label for="fname"></label>
-
-                </fieldset>
-
+        <form action="#" method="post">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+                
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user-email">
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+               
+                <label for="pword">Password</label>
+                <input type="password" id="pword" name="pword">
+                
+                <label for="confirm-pword">Confirm Password</label>
+                <input type="password" id="confirm-pword" name="confirm-pword">
+                </div>
+    
+                <button type="submit">Sign-Up</button>
         </form>
+
+        <p>Already have an account? <a href="#">Log in</a></p>
     </div>
+
+
 </body>
 </html>
