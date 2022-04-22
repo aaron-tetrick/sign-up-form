@@ -15,7 +15,8 @@ body {
 
 .main-pic {
     position: relative;
-    width: 30vw;
+    display: block;
+    width: 50vw;
     border-right: solid 4px var(--main-color);
 }
 
@@ -28,12 +29,12 @@ body {
 .heading > h1 {
     position: absolute;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 900;
     text-align: center;
     color:white;
     padding: 35px;
-    width: 30vw;
+    width: 50vw;
     background-color: #ed1b2c93;
     top: 10%;
     left: 0%;
@@ -47,56 +48,93 @@ h1::before {
 */
 .heading > img {
     position: absolute;
-    width: 50px;
+    width: 130px;
+    opacity: 50%;
     background-color: rgba(252, 10, 10, 0.4);
-    top: 14%;
-    left: 1.5%;
-}
-
-
-h2 {
-    width: 50%;
-    font-size: 20px;
-    font-weight: 100;
+    top: 10%;
+    left: 3%;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 70vw;
+    align-items: flex-start;
+    width: 50vw;
     height: 100vh;
+    border: solid 0px green;
+}
 
+.description {
+    font-size: 1.25rem;
+    width: 60%;
+    margin-bottom: 20px;
+    
 }
 
 
 form {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
-    padding: 5vh 60vw;
-    font-weight: bold;
+    padding: 5vh 50%;
+}
+
+h2 {
+    font-size: 2rem;
+    width: 600px;
+    display: flex;
 }
 
 input {
     border-radius: 3px;
+    font-size: 1rem;
+    border: solid 1px var(--main-color);
+    width: 300px;
+    margin-right: 35px;
 }
 
-form input, label {
-    font-size: 1rem;
+label {
+    font-size: 1.25rem;
+}
+
+input, label {
+    
+}
+
+form div {
+    margin: 5px;
+}
+
+.name, .contact, .password {
+    display: flex;
+    justify-content: flex-start;
 }
 
 button {
-    width: 100px;
-    height: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    border: solid 1px var(--main-color);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.login {
+    font-size: 1.25rem;
+    display: flex;
+    margin-top: 10px;
+    width: 80%;
+    border: solid 3px blue;
 }
 
 a {
