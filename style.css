@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -29,89 +29,99 @@ body {
 .heading > h1 {
     position: absolute;
     font-family: "Poppins", sans-serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 900;
-    text-align: center;
+    text-align: end;
     color:white;
-    padding: 35px;
+    padding: 1.4rem;
+    padding-right: 3rem;
     width: 50vw;
     background-color: #ed1b2c93;
     top: 10%;
     left: 0%;
 }
-/*
-h1::before {
-    content: "Hello";
-    border: solid 3px blue;
-}
 
-*/
 .heading > img {
     position: absolute;
     width: 130px;
     opacity: 50%;
     background-color: rgba(252, 10, 10, 0.4);
     top: 10%;
-    left: 3%;
+    left: 2.5%;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px green;
+    width: 80%;
 }
 
 .container {
+    position: relative;
+    right: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     width: 50vw;
     height: 100vh;
-    border: solid 0px green;
 }
 
 .description {
     font-size: 1.25rem;
-    width: 60%;
-    margin-bottom: 20px;
+    padding-left: 4rem;
+    padding-right: 10rem;
     
 }
-
+span {
+    font-style: italic;
+}
 
 form {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: var(--main-color);
-    padding: 5vh 50%;
+    padding: 4rem;
+    margin: 4rem 0;
+}
+
+.login {
+    font-size: 1.25rem;
+    display: flex;
+    padding-left: 4rem;
 }
 
 h2 {
     font-size: 2rem;
-    width: 600px;
-    display: flex;
+    margin-bottom: 1rem;
 }
 
 input {
     border-radius: 3px;
     font-size: 1rem;
     border: solid 1px var(--main-color);
-    width: 300px;
-    margin-right: 35px;
 }
 
 label {
     font-size: 1.25rem;
-}
-
-input, label {
-    
-}
+}    
 
 form div {
-    margin: 5px;
+    display: grid;
+    flex-direction: column;
+    column-gap: 4rem;
+    row-gap: 0rem;
+    margin: 0.25rem 0;
+
 }
 
 .name, .contact, .password {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
 }
 
 button {
@@ -124,18 +134,12 @@ button {
     justify-content: center;
     background-color: white;
     border: solid 1px var(--main-color);
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 1.5rem;
 }
 
-.login {
-    font-size: 1.25rem;
-    display: flex;
-    margin-top: 10px;
-    width: 80%;
-    border: solid 3px blue;
-}
+
 
 a {
     color: var(--main-color);
