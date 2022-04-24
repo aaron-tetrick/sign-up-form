@@ -86,6 +86,7 @@ form {
     background-color: var(--main-color);
     padding: 4rem;
     margin: 4rem 0;
+    box-shadow: 2px 5px 8px 2px rgb(172, 171, 171);
 }
 
 .login {
@@ -139,10 +140,57 @@ button {
     margin-top: 1.5rem;
 }
 
-
-
 a {
     color: var(--main-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+/*PSEUDO CLASSES*/
+input:focus {
+    border: solid 1px black;
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+input + span {
+    position: relative;
+}
+
+input:required + span::after {
+    position: absolute;
+    content: "Required";
+    font-style: normal;
+    font-size: 16px;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border: solid 1px black;
+    border-radius: 3px;
+    padding: 2px 10px;
+    top: -59px;
+    left: 257px
+}
+
+input:invalid {
+    border: solid 3px black;
+}
+
+button:hover {
+    background-color: white;
+    border: 3px white solid;
+    color: white;
+    background-color: var(--main-color);
+}
+
+button:active {
+    background-color: white;
+    color: black;
+}
+
+a:hover {
+    filter: brightness(200%);
+}
+
+a:active {
+    color: black;
 }
